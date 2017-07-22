@@ -31,7 +31,7 @@ h6 {
 
 p {
     margin: 0 0 20px;
-    font-size: 16px;
+    company-social: 16px;
     line-height: 1.6em;
 }
 
@@ -666,6 +666,8 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	text-align: center;
 	margin:0;
 	padding:0;
+	font-size: 22px;
+	vertical-align: -3px;
 }
 .company-social .social-facebook a{background: #ef1919;}
 .company-social .social-twitter a{background: #62c6f8;}
