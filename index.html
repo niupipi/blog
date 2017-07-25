@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="zh-cmn-Hans" xmlns:wb="http://open.weibo.com/wb">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <meta name="description" content="直播,商业直播,新意象">
     <meta name="author" content="王虎,薛涛">
     <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
     <title>Live.New Imagery</title>
 
@@ -17,6 +18,9 @@
 	<link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/default.css" rel="stylesheet">
+
+    <link href="css/JiSlider.css" rel="stylesheet">
+    
 </head>
 <body data-spy="scroll">
 
@@ -47,9 +51,10 @@
             <li><a href="index.html">Live.New Imagery</a></li>
             <li>
                 <ul class="company-social">
+                <wb:follow-button uid="3229535887" type="gray_1" width="67" height="24" ></wb:follow-button>
                     <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-weibo"></i></a></li>
                     <li class="social-twitter"><a href="tencent://message/?uin=2402701068"><i class="fa fa-qq"></i></a></li>
-                    <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-weixin"></i></a></li>
+                    <li class="social-dribble"><a href="weixin://contacts/profile/WH741106631" ><i class="fa fa-weixin"></i></a></li>
                     
                 </ul>
             </li>
@@ -58,10 +63,25 @@
 
     <!-- Section: intro -->
     <section id="intro" class="intro" style="background:url('images/img-bg.jpg') no-repeat center center; background-size: cover;">
+    <div id="JiSlider" class="jislider">
         <div class="slogan">
-            <h1>Live.New Imagery</h1> 
-            <h1>新意象直播</h1>
-            <a href="#about" class="btn btn-skin scroll">了解更多</a>
+            <ul><li>
+                    <h1>Live.New Imagery</h1> 
+                    <h1>新意象直播</h1>
+                    <a href="#about" class="btn btn-skin scroll">了解更多</a>
+                </li>
+                <li>
+                     
+                    <h1>专注于商业直播</h1>
+                    <a href="#about" class="btn btn-skin scroll">了解更多</a>
+                </li>
+                <li>
+                    
+                    <h1>为商业带来有价值的传播</h1>
+                    <a href="#about" class="btn btn-skin scroll">了解更多</a>
+                </li>
+            </ul>
+        </div>
         </div>
     </section>
     <!-- /Section: intro -->
@@ -392,5 +412,13 @@
 <footer>
   <p>Copyright © Design & Developed by New Imagery. All rights reserved</p>
 </footer>
+
+
+<script src="js/JiSlider.js"></script>
+<script>
+            $(window).load(function () {
+                $('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: true}).addClass('ff')
+            })
+</script>
 </body>
 </html>
