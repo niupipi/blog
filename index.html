@@ -10,7 +10,7 @@
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
     <title>Live.New Imagery</title>
-
+    <link href="css/JiSlider.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
 	<link href="css/nivo-lightbox.css" rel="stylesheet" />
@@ -19,7 +19,7 @@
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/default.css" rel="stylesheet">
 
-    <link href="css/JiSlider.css" rel="stylesheet">
+    
     
 </head>
 <body data-spy="scroll">
@@ -405,8 +405,17 @@
     </section>
     <!-- /Section: contact -->
 
+
     <!-- Core JavaScript Files -->
+
     <script src="js/jquery.min.js"></script>
+     <script src="js/JiSlider.js"></script>
+    <script>
+                $(window).load(function () {
+                    $('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: true}).addClass('ff')
+                    $('#JiSlider').css('visibility','visible');
+                })
+    </script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/gnmenu.js"></script>
@@ -420,12 +429,7 @@
   <p>Copyright © Design & Developed by New Imagery. All rights reserved</p>
 </footer>
 
+ 
 
-<script src="js/JiSlider.js"></script>
-<script>
-            $(window).load(function () {
-                $('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: true}).addClass('ff')
-            })
-</script>
 </body>
 </html>
