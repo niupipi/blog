@@ -18,7 +18,14 @@
 	<link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/default.css" rel="stylesheet">
-
+        <script type="text/javascript">
+        function  showImg(){
+        document.getElementById("wxImg").style.display='block';
+        }
+        function hideImg(){
+        document.getElementById("wxImg").style.display='none';
+        }
+        </script>
     
     
 </head>
@@ -54,7 +61,10 @@
                
                     <li class="social-facebook"><a href="http://weibo.com/WH741106631" target="_blank"><i class="fa fa-weibo"></i></a></li>
                     <li class="social-twitter"><a href="http://wpa.qq.com/msgrd?v=3&uin=741106631&site=qq&menu=yes"><i class="fa fa-qq"></i></a></li>
-                    <li class="social-dribble"><a href="https://wx2.qq.com/" ><i class="fa fa-weixin"></i></a></li>
+                    <li class="social-dribble"><a href="javascript:void(0)" onMouseOut="hideImg()"  onmouseover="showImg()" ><i class="fa fa-weixin"></i></a></li>
+                    <div id="wxImg" style="display:none; right: 130px; top: 50px;back-ground:#f00;position:absolute; z-index:999;">
+                        <img width="200px" class="wx" src="images/二维码.jpg">
+                    </div>
                     
                 </ul>
             </li>
