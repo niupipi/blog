@@ -18,7 +18,14 @@
 	<link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/default.css" rel="stylesheet">
-
+        <script type="text/javascript">
+        function  showImg(){
+        document.getElementById("wxImg").style.display='block';
+        }
+        function hideImg(){
+        document.getElementById("wxImg").style.display='none';
+        }
+        </script>
     
     
 </head>
@@ -51,8 +58,11 @@
                 <ul class="company-social">
                
                     <li class="social-facebook"><a href="http://weibo.com/WH741106631" target="_blank"><i class="fa fa-weibo"></i></a></li>
-                    <li class="social-twitter"><a href="tencent://message/?uin=2402701068"><i class="fa fa-qq"></i></a></li>
-                    <li class="social-dribble"><a href="https://wx.qq.com/" ><i class="fa fa-weixin"></i></a></li>
+                    <li class="social-twitter"><a href="http://wpa.qq.com/msgrd?v=3&uin=741106631&site=qq&menu=yes"><i class="fa fa-qq"></i></a></li>
+                    <li class="social-dribble"><a href="javascript:void(0)" onMouseOut="hideImg()"  onmouseover="showImg()" ><i class="fa fa-weixin"></i></a></li>
+                    <div id="wxImg" style="display:none; right: 130px; top: 50px;back-ground:#f00;position:absolute; z-index:999;">
+                        <img width="200px" class="wx" src="images/二维码.jpg">
+                    </div>
                     
                 </ul>
             </li>
@@ -100,7 +110,8 @@
 
                         <div class="section-heading">
                             <h2>关于我们</h2>
-							<p>这是一个无直播不传播的时代，但，除了对着手机撅嘴、卖萌，我们更可以：<br>用电视直播的多机位、全视角专业手段，打造高品质的视听。为商业带来更有价值的传播。</p>
+                            <p>专注于商业直播，为商业带来有价值的传播。<p>
+							<p>无直播不传播的时代,摒弃举着手机努嘴、卖萌。<br>用电视直播的多机位、全视角专业手段,打造高品质的视听。<br>为商业带来最有价值的传播。</p>
                         </div>
 
                     </div>
@@ -114,8 +125,12 @@
 
                     <div class="team boxed-grey">
                         <div class="inner">
+
+                            
+
                             <h5>优质的团队</h5>
                             <p class="subtitle">点击浏览详情</p>
+
                             <div class="avatar">
                                 <img src="images/team/1.jpg" alt="" class="img-responsive" /></div>
                         </div>
@@ -126,8 +141,12 @@
 
                     <div class="team boxed-grey">
                         <div class="inner">
+
+                            
+
                             <h5>精良的设备</h5>
                             <p class="subtitle">点击浏览详情</p>
+
                             <div class="avatar">
                                 <img src="images/team/2.jpg" alt="" class="img-responsive" /></div>
                         </div>
@@ -150,8 +169,12 @@
 
                     <div class="team boxed-grey">
                         <div class="inner">
+
+                            
+
                             <h5>广泛的合作</h5>
                             <p class="subtitle">点击浏览详情</p>
+
                             <div class="avatar">
                                 <img src="images/team/4.jpg" alt="" class="img-responsive" /></div>
                         </div>
