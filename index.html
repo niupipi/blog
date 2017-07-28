@@ -10,7 +10,32 @@
     
 
     <title>Live.New Imagery</title>
+
     <link href="css/JiSlider.css" rel="stylesheet">
+    <style type="text/css">
+                        
+                        #demo { overflow:hidden;
+                        background: #FFF;
+                        overflow:hidden;
+                        border: 0px dashed #CCC;
+                        /*width: 940px;*/
+                        }
+                        #demo img {
+                        border: 3px solid #F2F2F2;
+                        }
+                        #indemo {
+                        float: left;
+                        width: 800%;
+                        }
+                        #demo1 {
+                        float: left;
+                        }
+                        #demo2 {
+                        float: left;
+                        }
+                        
+                        </style>
+
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
 	<link href="css/nivo-lightbox.css" rel="stylesheet" />
@@ -344,7 +369,25 @@
                 </div>
             </div>
         </div>
-        <table width="1000" align="center"  border="0">
+
+    <div id="demo">
+                        <div id="indemo">
+                        <div id="demo1">
+                       <img src="images/team/1.jpg"/>
+                       <img src="images/team/2.jpg"/>
+                       <img src="images/team/3.jpg"/>
+                       <img src="images/team/4.jpg"/>
+                       <img src="images/team/1.jpg"/>
+                       <img src="images/team/3.jpg"/>
+                       <img src="images/team/2.jpg"/>
+                       <img src="images/team/4.jpg"/></div>
+                        <div id="demo2"></div>
+                        </div>
+                        </div>
+    
+
+
+        <!-- <table width="1000" align="center"  border="0">
             <tr height="200">
                 <td  align="center"><img src="images/client/clients-logo1.png" alt="" class="img-responsive"></td>
                 <td  align="center"><img src="images/client/clients-logo2.png" alt="" class="img-responsive"></td>
@@ -362,7 +405,7 @@
 
            
         </table>
-          
+           -->
            
                        
                       
@@ -461,6 +504,7 @@
     <!-- Core JavaScript Files -->
 
     <script src="js/jquery.min.js"></script>
+
      <script src="js/JiSlider.js"></script>
     <script>
                 $(window).load(function () {
@@ -468,6 +512,28 @@
                     $('#JiSlider').css('visibility','visible'); //加的，加载时不让字都显示出来
                 })
     </script>
+
+   <script>
+                        <!--
+                        var speed=10; //数字越大速度越慢
+                        var tab=document.getElementById("demo");
+                        var tab1=document.getElementById("demo1");
+                        var tab2=document.getElementById("demo2");
+                        tab2.innerHTML=tab1.innerHTML;
+                        function Marquee(){
+                        if(tab2.offsetWidth-tab.scrollLeft<=0)
+                        tab.scrollLeft-=tab1.offsetWidth
+                        else{
+                        tab.scrollLeft++;
+                        }
+                        }
+                        var MyMar=setInterval(Marquee,speed);
+                        tab.onmouseover=function() {clearInterval(MyMar)};
+                        tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+                        -->
+                        </script>
+  
+
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/gnmenu.js"></script>
